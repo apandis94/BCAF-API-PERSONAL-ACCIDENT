@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Not Receive Polis,,,,2022-04-21 14:47:00,2022-04-21 14:47:37,37.114s,ERROR
+,,,,,,,
+Test Cases/3. get token -- verify pa-order - data belum terima polis,,,,2022-04-21 14:47:31,2022-04-21 14:47:37,5.243s,ERROR
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-21 14:47:32,2022-04-21 14:47:33,1.693s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-21 14:47:33,2022-04-21 14:47:33,0.002s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-21 14:47:33,2022-04-21 14:47:33,0.001s,PASSED
+private_token = access_token,,define / field api,,2022-04-21 14:47:33,2022-04-21 14:47:33,0.001s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-21 14:47:33,2022-04-21 14:47:33,0.001s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-21 14:47:33,2022-04-21 14:47:33,0.002s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-21 14:47:33,2022-04-21 14:47:33,0.001s,PASSED
+logInfo($response_token),,,,2022-04-21 14:47:33,2022-04-21 14:47:33,0.002s,PASSED
+"order = sendRequest(findTestObject(""pa-order"", [""token"":private_token, ""order_date"":order_date, ""maskapai_id"":maskapai_id, ""page"":page, ""row"":row, ""source"":source]))",,,,2022-04-21 14:47:33,2022-04-21 14:47:37,3.428s,PASSED
+get_order = order.getResponseText(),,show response to report in test suite,,2022-04-21 14:47:37,2022-04-21 14:47:37,0.001s,PASSED
+"markPassed(""verifikasi data ke : "" + no)",,,,2022-04-21 14:47:37,2022-04-21 14:47:37,0.006s,ERROR

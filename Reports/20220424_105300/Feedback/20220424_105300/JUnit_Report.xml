@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Feedback" time="43.473" tests="1" failures="0" errors="1">
+   <testsuite name="Feedback" tests="1" failures="0" errors="1" time="43.473" skipped="0" timestamp="2022-04-24 10:53:23" hostname="Nia Yusniati - Apandi" id="Test Suites/Feedback">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Nia Yusniati\\Git_Asa\\Personal Accident\\Reports\\20220424_105300\\Feedback\\20220424_105300"/>
+         <property name="logFiles" value="C:\\Users\\Nia Yusniati\\Git_Asa\\Personal Accident\\Reports\\20220424_105300\\Feedback\\20220424_105300\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Nia Yusniati - Apandi"/>
+         <property name="hostAddress" value="192.168.129.156"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="14.73" classname="Test Cases/5. get token -- pa-feedback" status="ERROR">
+         <error type="ERROR" message="Test Cases/5. get token -- pa-feedback FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: base64 for class: Script1650425776838
+	at 5. get token -- pa-feedback.run(5. get token -- pa-feedback:46)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650772380643.run(TempTestSuite1650772380643.groovy:36)
+"/>
+         <system-out><![CDATA[2022-04-24 10:53:48 - [TEST_CASE][ERROR] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: base64 for class: Script1650425776838
+	at 5. get token -- pa-feedback.run(5. get token -- pa-feedback:46)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650772380643.run(TempTestSuite1650772380643.groovy:36)
+
+
+2022-04-24 10:54:01 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 10:54:03 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_105300\Feedback\20220424_105300\requests\main\3.har
+
+2022-04-24 10:54:03 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 10:54:03 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 10:54:03 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 10:54:03 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 10:54:03 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 10:54:03 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 10:54:03 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "EOZWn41mgFGEFza45pixsUBGuYIl",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 10:54:03 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "EOZWn41mgFGEFza45pixsUBGuYIl",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 10:54:03 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 10:54:03 - [TEST_STEP][ERROR] - feedback = sendRequest(findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source])): Test Cases/5. get token -- pa-feedback FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: base64 for class: Script1650425776838
+	at 5. get token -- pa-feedback.run(5. get token -- pa-feedback:46)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650772380643.run(TempTestSuite1650772380643.groovy:36)
+
+
+2022-04-24 10:54:03 - [MESSAGE][ERROR] - Test Cases/5. get token -- pa-feedback FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: base64 for class: Script1650425776838
+	at 5. get token -- pa-feedback.run(5. get token -- pa-feedback:46)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650772380643.run(TempTestSuite1650772380643.groovy:36)]]></system-out>
+         <system-err><![CDATA[2022-04-24 10:53:48 - [TEST_CASE][ERROR] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: base64 for class: Script1650425776838
+	at 5. get token -- pa-feedback.run(5. get token -- pa-feedback:46)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650772380643.run(TempTestSuite1650772380643.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-04-24 10:53:23 - [TEST_SUITE][ERROR] - Feedback: Test Cases/5. get token -- pa-feedback FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: base64 for class: Script1650425776838
+	at 5. get token -- pa-feedback.run(5. get token -- pa-feedback:46)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650772380643.run(TempTestSuite1650772380643.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-04-24 10:53:23 - [TEST_SUITE][ERROR] - Feedback: Test Cases/5. get token -- pa-feedback FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: base64 for class: Script1650425776838
+	at 5. get token -- pa-feedback.run(5. get token -- pa-feedback:46)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650772380643.run(TempTestSuite1650772380643.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

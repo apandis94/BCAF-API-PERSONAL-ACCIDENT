@@ -1,0 +1,182 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Feedback,,,,2022-04-25 15:38:16,2022-04-25 15:38:41,24.899s,PASSED
+,,,,,,,
+Test Cases/5. get token -- pa-feedback,,,,2022-04-25 15:38:18,2022-04-25 15:38:27,9.784s,PASSED
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-25 15:38:20,2022-04-25 15:38:25,4.816s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-25 15:38:25,2022-04-25 15:38:25,0.033s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-25 15:38:25,2022-04-25 15:38:25,0.066s,PASSED
+private_token = access_token,,define / field api,,2022-04-25 15:38:25,2022-04-25 15:38:25,0.045s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-25 15:38:25,2022-04-25 15:38:25,0.002s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:25,2022-04-25 15:38:25,0.003s,PASSED
+logInfo($response_token),,,,2022-04-25 15:38:25,2022-04-25 15:38:25,0.108s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-25 15:38:25,2022-04-25 15:38:26,0.009s,PASSED
+"feedback = findTestObject(""pa-feedback"", [""token"":private_token, ""maskapai_id"":maskapai_id, ""order_id"":order_id, ""no_polis"":no_polis, ""base64"":base64, ""source"":source])",,,,2022-04-25 15:38:26,2022-04-25 15:38:26,0.845s,PASSED
+body2 = feedback.getBodyContent(),,menambahkan body request,,2022-04-25 15:38:26,2022-04-25 15:38:26,0.083s,PASSED
+req = body2.getText(),,,,2022-04-25 15:38:26,2022-04-25 15:38:27,0.111s,PASSED
+response = sendRequest(feedback),,Cek response data,,2022-04-25 15:38:27,2022-04-25 15:38:27,0.807s,PASSED
+response_feedback = response.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:27,2022-04-25 15:38:27,0.006s,PASSED
+"markPassed(""Hit data ke : "" + no)",,-------------------------------------------------------,,2022-04-25 15:38:27,2022-04-25 15:38:27,0.027s,PASSED
+logInfo($req),,print log request text body,,2022-04-25 15:38:27,2022-04-25 15:38:27,0.021s,PASSED
+logInfo($response_feedback),,print log response text body,,2022-04-25 15:38:27,2022-04-25 15:38:27,0.006s,PASSED
+,,,,,,,
+Test Cases/5. get token -- pa-feedback,,,,2022-04-25 15:38:28,2022-04-25 15:38:30,1.871s,PASSED
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-25 15:38:28,2022-04-25 15:38:28,0.379s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-25 15:38:28,2022-04-25 15:38:28,0.003s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-25 15:38:28,2022-04-25 15:38:28,0.003s,PASSED
+private_token = access_token,,define / field api,,2022-04-25 15:38:28,2022-04-25 15:38:28,0.011s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-25 15:38:28,2022-04-25 15:38:28,0.002s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:28,2022-04-25 15:38:28,0.002s,PASSED
+logInfo($response_token),,,,2022-04-25 15:38:28,2022-04-25 15:38:28,0.005s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-25 15:38:28,2022-04-25 15:38:28,0.004s,PASSED
+"feedback = findTestObject(""pa-feedback"", [""token"":private_token, ""maskapai_id"":maskapai_id, ""order_id"":order_id, ""no_polis"":no_polis, ""base64"":base64, ""source"":source])",,,,2022-04-25 15:38:28,2022-04-25 15:38:29,0.565s,PASSED
+body2 = feedback.getBodyContent(),,menambahkan body request,,2022-04-25 15:38:29,2022-04-25 15:38:29,0.002s,PASSED
+req = body2.getText(),,,,2022-04-25 15:38:29,2022-04-25 15:38:29,0.002s,PASSED
+response = sendRequest(feedback),,Cek response data,,2022-04-25 15:38:29,2022-04-25 15:38:30,0.649s,PASSED
+response_feedback = response.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:30,2022-04-25 15:38:30,0.003s,PASSED
+"markPassed(""Hit data ke : "" + no)",,-------------------------------------------------------,,2022-04-25 15:38:30,2022-04-25 15:38:30,0.008s,PASSED
+logInfo($req),,print log request text body,,2022-04-25 15:38:30,2022-04-25 15:38:30,0.005s,PASSED
+logInfo($response_feedback),,print log response text body,,2022-04-25 15:38:30,2022-04-25 15:38:30,0.002s,PASSED
+,,,,,,,
+Test Cases/5. get token -- pa-feedback,,,,2022-04-25 15:38:30,2022-04-25 15:38:31,1.258s,PASSED
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-25 15:38:30,2022-04-25 15:38:30,0.236s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-25 15:38:30,2022-04-25 15:38:30,0.001s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-25 15:38:30,2022-04-25 15:38:30,0.000s,PASSED
+private_token = access_token,,define / field api,,2022-04-25 15:38:30,2022-04-25 15:38:30,0.002s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-25 15:38:30,2022-04-25 15:38:30,0.002s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:30,2022-04-25 15:38:30,0.001s,PASSED
+logInfo($response_token),,,,2022-04-25 15:38:30,2022-04-25 15:38:30,0.002s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-25 15:38:30,2022-04-25 15:38:30,0.001s,PASSED
+"feedback = findTestObject(""pa-feedback"", [""token"":private_token, ""maskapai_id"":maskapai_id, ""order_id"":order_id, ""no_polis"":no_polis, ""base64"":base64, ""source"":source])",,,,2022-04-25 15:38:30,2022-04-25 15:38:31,0.493s,PASSED
+body2 = feedback.getBodyContent(),,menambahkan body request,,2022-04-25 15:38:31,2022-04-25 15:38:31,0.002s,PASSED
+req = body2.getText(),,,,2022-04-25 15:38:31,2022-04-25 15:38:31,0.001s,PASSED
+response = sendRequest(feedback),,Cek response data,,2022-04-25 15:38:31,2022-04-25 15:38:31,0.386s,PASSED
+response_feedback = response.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:31,2022-04-25 15:38:31,0.001s,PASSED
+"markPassed(""Hit data ke : "" + no)",,-------------------------------------------------------,,2022-04-25 15:38:31,2022-04-25 15:38:31,0.003s,PASSED
+logInfo($req),,print log request text body,,2022-04-25 15:38:31,2022-04-25 15:38:31,0.002s,PASSED
+logInfo($response_feedback),,print log response text body,,2022-04-25 15:38:31,2022-04-25 15:38:31,0.002s,PASSED
+,,,,,,,
+Test Cases/5. get token -- pa-feedback,,,,2022-04-25 15:38:31,2022-04-25 15:38:33,1.225s,PASSED
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-25 15:38:31,2022-04-25 15:38:32,0.310s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-25 15:38:32,2022-04-25 15:38:32,0.002s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-25 15:38:32,2022-04-25 15:38:32,0.002s,PASSED
+private_token = access_token,,define / field api,,2022-04-25 15:38:32,2022-04-25 15:38:32,0.002s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-25 15:38:32,2022-04-25 15:38:32,0.003s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:32,2022-04-25 15:38:32,0.001s,PASSED
+logInfo($response_token),,,,2022-04-25 15:38:32,2022-04-25 15:38:32,0.003s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-25 15:38:32,2022-04-25 15:38:32,0.002s,PASSED
+"feedback = findTestObject(""pa-feedback"", [""token"":private_token, ""maskapai_id"":maskapai_id, ""order_id"":order_id, ""no_polis"":no_polis, ""base64"":base64, ""source"":source])",,,,2022-04-25 15:38:32,2022-04-25 15:38:32,0.593s,PASSED
+body2 = feedback.getBodyContent(),,menambahkan body request,,2022-04-25 15:38:32,2022-04-25 15:38:32,0.006s,PASSED
+req = body2.getText(),,,,2022-04-25 15:38:32,2022-04-25 15:38:32,0.003s,PASSED
+response = sendRequest(feedback),,Cek response data,,2022-04-25 15:38:32,2022-04-25 15:38:32,0.157s,PASSED
+response_feedback = response.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:32,2022-04-25 15:38:33,0.007s,PASSED
+"markPassed(""Hit data ke : "" + no)",,-------------------------------------------------------,,2022-04-25 15:38:33,2022-04-25 15:38:33,0.005s,PASSED
+logInfo($req),,print log request text body,,2022-04-25 15:38:33,2022-04-25 15:38:33,0.002s,PASSED
+logInfo($response_feedback),,print log response text body,,2022-04-25 15:38:33,2022-04-25 15:38:33,0.004s,PASSED
+,,,,,,,
+Test Cases/5. get token -- pa-feedback,,,,2022-04-25 15:38:33,2022-04-25 15:38:34,1.336s,PASSED
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-25 15:38:33,2022-04-25 15:38:33,0.326s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-25 15:38:33,2022-04-25 15:38:33,0.002s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-25 15:38:33,2022-04-25 15:38:33,0.001s,PASSED
+private_token = access_token,,define / field api,,2022-04-25 15:38:33,2022-04-25 15:38:33,0.001s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-25 15:38:33,2022-04-25 15:38:33,0.000s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:33,2022-04-25 15:38:33,0.000s,PASSED
+logInfo($response_token),,,,2022-04-25 15:38:33,2022-04-25 15:38:33,0.002s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-25 15:38:33,2022-04-25 15:38:33,0.001s,PASSED
+"feedback = findTestObject(""pa-feedback"", [""token"":private_token, ""maskapai_id"":maskapai_id, ""order_id"":order_id, ""no_polis"":no_polis, ""base64"":base64, ""source"":source])",,,,2022-04-25 15:38:33,2022-04-25 15:38:34,0.661s,PASSED
+body2 = feedback.getBodyContent(),,menambahkan body request,,2022-04-25 15:38:34,2022-04-25 15:38:34,0.000s,PASSED
+req = body2.getText(),,,,2022-04-25 15:38:34,2022-04-25 15:38:34,0.002s,PASSED
+response = sendRequest(feedback),,Cek response data,,2022-04-25 15:38:34,2022-04-25 15:38:34,0.125s,PASSED
+response_feedback = response.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:34,2022-04-25 15:38:34,0.001s,PASSED
+"markPassed(""Hit data ke : "" + no)",,-------------------------------------------------------,,2022-04-25 15:38:34,2022-04-25 15:38:34,0.002s,PASSED
+logInfo($req),,print log request text body,,2022-04-25 15:38:34,2022-04-25 15:38:34,0.001s,PASSED
+logInfo($response_feedback),,print log response text body,,2022-04-25 15:38:34,2022-04-25 15:38:34,0.002s,PASSED
+,,,,,,,
+Test Cases/5. get token -- pa-feedback,,,,2022-04-25 15:38:34,2022-04-25 15:38:36,1.916s,PASSED
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-25 15:38:35,2022-04-25 15:38:35,0.353s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-25 15:38:35,2022-04-25 15:38:35,0.001s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-25 15:38:35,2022-04-25 15:38:35,0.001s,PASSED
+private_token = access_token,,define / field api,,2022-04-25 15:38:35,2022-04-25 15:38:35,0.001s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-25 15:38:35,2022-04-25 15:38:35,0.001s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:35,2022-04-25 15:38:35,0.002s,PASSED
+logInfo($response_token),,,,2022-04-25 15:38:35,2022-04-25 15:38:35,0.003s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-25 15:38:35,2022-04-25 15:38:35,0.001s,PASSED
+"feedback = findTestObject(""pa-feedback"", [""token"":private_token, ""maskapai_id"":maskapai_id, ""order_id"":order_id, ""no_polis"":no_polis, ""base64"":base64, ""source"":source])",,,,2022-04-25 15:38:35,2022-04-25 15:38:36,0.902s,PASSED
+body2 = feedback.getBodyContent(),,menambahkan body request,,2022-04-25 15:38:36,2022-04-25 15:38:36,0.001s,PASSED
+req = body2.getText(),,,,2022-04-25 15:38:36,2022-04-25 15:38:36,0.001s,PASSED
+response = sendRequest(feedback),,Cek response data,,2022-04-25 15:38:36,2022-04-25 15:38:36,0.381s,PASSED
+response_feedback = response.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:36,2022-04-25 15:38:36,0.001s,PASSED
+"markPassed(""Hit data ke : "" + no)",,-------------------------------------------------------,,2022-04-25 15:38:36,2022-04-25 15:38:36,0.002s,PASSED
+logInfo($req),,print log request text body,,2022-04-25 15:38:36,2022-04-25 15:38:36,0.002s,PASSED
+logInfo($response_feedback),,print log response text body,,2022-04-25 15:38:36,2022-04-25 15:38:36,0.001s,PASSED
+,,,,,,,
+Test Cases/5. get token -- pa-feedback,,,,2022-04-25 15:38:37,2022-04-25 15:38:38,1.534s,PASSED
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-25 15:38:37,2022-04-25 15:38:38,0.447s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.001s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.003s,PASSED
+private_token = access_token,,define / field api,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.001s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.001s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.001s,PASSED
+logInfo($response_token),,,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.002s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.001s,PASSED
+"feedback = findTestObject(""pa-feedback"", [""token"":private_token, ""maskapai_id"":maskapai_id, ""order_id"":order_id, ""no_polis"":no_polis, ""base64"":base64, ""source"":source])",,,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.529s,PASSED
+body2 = feedback.getBodyContent(),,menambahkan body request,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.001s,PASSED
+req = body2.getText(),,,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.000s,PASSED
+response = sendRequest(feedback),,Cek response data,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.214s,PASSED
+response_feedback = response.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.001s,PASSED
+"markPassed(""Hit data ke : "" + no)",,-------------------------------------------------------,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.005s,PASSED
+logInfo($req),,print log request text body,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.002s,PASSED
+logInfo($response_feedback),,print log response text body,,2022-04-25 15:38:38,2022-04-25 15:38:38,0.001s,PASSED
+,,,,,,,
+Test Cases/5. get token -- pa-feedback,,,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.705s,PASSED
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.151s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.000s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.001s,PASSED
+private_token = access_token,,define / field api,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.000s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.001s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.000s,PASSED
+logInfo($response_token),,,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.000s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.001s,PASSED
+"feedback = findTestObject(""pa-feedback"", [""token"":private_token, ""maskapai_id"":maskapai_id, ""order_id"":order_id, ""no_polis"":no_polis, ""base64"":base64, ""source"":source])",,,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.324s,PASSED
+body2 = feedback.getBodyContent(),,menambahkan body request,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.001s,PASSED
+req = body2.getText(),,,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.002s,PASSED
+response = sendRequest(feedback),,Cek response data,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.139s,PASSED
+response_feedback = response.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.002s,PASSED
+"markPassed(""Hit data ke : "" + no)",,-------------------------------------------------------,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.001s,PASSED
+logInfo($req),,print log request text body,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.001s,PASSED
+logInfo($response_feedback),,print log response text body,,2022-04-25 15:38:39,2022-04-25 15:38:39,0.001s,PASSED
+,,,,,,,
+Test Cases/5. get token -- pa-feedback,,,,2022-04-25 15:38:39,2022-04-25 15:38:40,0.830s,PASSED
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-25 15:38:39,2022-04-25 15:38:40,0.173s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.001s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.001s,PASSED
+private_token = access_token,,define / field api,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.001s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.001s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.001s,PASSED
+logInfo($response_token),,,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.001s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.001s,PASSED
+"feedback = findTestObject(""pa-feedback"", [""token"":private_token, ""maskapai_id"":maskapai_id, ""order_id"":order_id, ""no_polis"":no_polis, ""base64"":base64, ""source"":source])",,,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.454s,PASSED
+body2 = feedback.getBodyContent(),,menambahkan body request,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.000s,PASSED
+req = body2.getText(),,,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.000s,PASSED
+response = sendRequest(feedback),,Cek response data,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.131s,PASSED
+response_feedback = response.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.000s,PASSED
+"markPassed(""Hit data ke : "" + no)",,-------------------------------------------------------,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.001s,PASSED
+logInfo($req),,print log request text body,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.002s,PASSED
+logInfo($response_feedback),,print log response text body,,2022-04-25 15:38:40,2022-04-25 15:38:40,0.001s,PASSED
+,,,,,,,
+Test Cases/5. get token -- pa-feedback,,,,2022-04-25 15:38:40,2022-04-25 15:38:41,0.730s,PASSED
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-25 15:38:40,2022-04-25 15:38:41,0.216s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.000s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.001s,PASSED
+private_token = access_token,,define / field api,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.000s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.000s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.000s,PASSED
+logInfo($response_token),,,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.001s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.000s,PASSED
+"feedback = findTestObject(""pa-feedback"", [""token"":private_token, ""maskapai_id"":maskapai_id, ""order_id"":order_id, ""no_polis"":no_polis, ""base64"":base64, ""source"":source])",,,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.333s,PASSED
+body2 = feedback.getBodyContent(),,menambahkan body request,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.000s,PASSED
+req = body2.getText(),,,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.000s,PASSED
+response = sendRequest(feedback),,Cek response data,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.106s,PASSED
+response_feedback = response.getResponseText(),,show response to report in test suite,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.001s,PASSED
+"markPassed(""Hit data ke : "" + no)",,-------------------------------------------------------,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.001s,PASSED
+logInfo($req),,print log request text body,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.001s,PASSED
+logInfo($response_feedback),,print log response text body,,2022-04-25 15:38:41,2022-04-25 15:38:41,0.000s,PASSED

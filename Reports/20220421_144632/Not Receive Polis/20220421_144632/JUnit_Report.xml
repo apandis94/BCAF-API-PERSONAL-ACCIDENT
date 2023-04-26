@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Not Receive Polis" time="38.535" tests="1" failures="0" errors="1">
+   <testsuite name="Not Receive Polis" tests="1" failures="0" errors="1" time="38.535" skipped="0" timestamp="2022-04-21 14:47:00" hostname="Nia Yusniati - Apandi" id="Test Suites/Not Receive Polis">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Nia Yusniati\\Git_Asa\\Personal Accident\\Reports\\20220421_144632\\Not Receive Polis\\20220421_144632"/>
+         <property name="logFiles" value="C:\\Users\\Nia Yusniati\\Git_Asa\\Personal Accident\\Reports\\20220421_144632\\Not Receive Polis\\20220421_144632\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Nia Yusniati - Apandi"/>
+         <property name="hostAddress" value="192.168.250.3"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/3. get token -- verify pa-order - data belum terima polis" time="5.243" classname="Test Cases/3. get token -- verify pa-order - data belum terima polis" status="ERROR">
+         <error type="ERROR" message="Test Cases/3. get token -- verify pa-order - data belum terima polis FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: no for class: Script1650425319352
+	at 3. get token -- verify pa-order - data belum terima polis.run(3. get token -- verify pa-order - data belum terima polis:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650527192907.run(TempTestSuite1650527192907.groovy:36)
+"/>
+         <system-out><![CDATA[2022-04-21 14:47:31 - [TEST_CASE][ERROR] - Test Cases/3. get token -- verify pa-order - data belum terima polis: Test Cases/3. get token -- verify pa-order - data belum terima polis FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: no for class: Script1650425319352
+	at 3. get token -- verify pa-order - data belum terima polis.run(3. get token -- verify pa-order - data belum terima polis:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650527192907.run(TempTestSuite1650527192907.groovy:36)
+
+
+2022-04-21 14:47:32 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-21 14:47:33 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220421_144632\Not Receive Polis\20220421_144632\requests\main\6.har
+
+2022-04-21 14:47:33 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-21 14:47:33 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-21 14:47:33 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-21 14:47:33 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-21 14:47:33 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-21 14:47:33 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-21 14:47:33 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-21 14:47:33 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "VwVAOvhAEeiVcXjwgaoFBiAJLO7w",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-21 14:47:33 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "VwVAOvhAEeiVcXjwgaoFBiAJLO7w",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-21 14:47:33 - [TEST_STEP][PASSED] - order = sendRequest(findTestObject("pa-order", ["token":private_token, "order_date":order_date, "maskapai_id":maskapai_id, "page":page, "row":row, "source":source])): Send request successfully
+
+2022-04-21 14:47:37 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220421_144632\Not Receive Polis\20220421_144632\requests\main\7.har
+
+2022-04-21 14:47:37 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-21 14:47:37 - [TEST_STEP][PASSED] - get_order = order.getResponseText(): null
+
+2022-04-21 14:47:37 - [TEST_STEP][ERROR] - markPassed("verifikasi data ke : " + no): Test Cases/3. get token -- verify pa-order - data belum terima polis FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: no for class: Script1650425319352
+	at 3. get token -- verify pa-order - data belum terima polis.run(3. get token -- verify pa-order - data belum terima polis:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650527192907.run(TempTestSuite1650527192907.groovy:36)
+
+
+2022-04-21 14:47:37 - [MESSAGE][ERROR] - Test Cases/3. get token -- verify pa-order - data belum terima polis FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: no for class: Script1650425319352
+	at 3. get token -- verify pa-order - data belum terima polis.run(3. get token -- verify pa-order - data belum terima polis:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650527192907.run(TempTestSuite1650527192907.groovy:36)]]></system-out>
+         <system-err><![CDATA[2022-04-21 14:47:31 - [TEST_CASE][ERROR] - Test Cases/3. get token -- verify pa-order - data belum terima polis: Test Cases/3. get token -- verify pa-order - data belum terima polis FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: no for class: Script1650425319352
+	at 3. get token -- verify pa-order - data belum terima polis.run(3. get token -- verify pa-order - data belum terima polis:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:351)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650527192907.run(TempTestSuite1650527192907.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-04-21 14:47:00 - [TEST_SUITE][ERROR] - Not Receive Polis: Test Cases/3. get token -- verify pa-order - data belum terima polis FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: no for class: Script1650425319352
+	at 3. get token -- verify pa-order - data belum terima polis.run(3. get token -- verify pa-order - data belum terima polis:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650527192907.run(TempTestSuite1650527192907.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-04-21 14:47:00 - [TEST_SUITE][ERROR] - Not Receive Polis: Test Cases/3. get token -- verify pa-order - data belum terima polis FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: no for class: Script1650425319352
+	at 3. get token -- verify pa-order - data belum terima polis.run(3. get token -- verify pa-order - data belum terima polis:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1650527192907.run(TempTestSuite1650527192907.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

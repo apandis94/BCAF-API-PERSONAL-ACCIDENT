@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Feedback,,,,2022-04-24 13:30:00,2022-04-24 13:30:06,5.497s,PASSED
+,,,,,,,
+Test Cases/5. get token -- pa-feedback,,,,2022-04-24 13:30:01,2022-04-24 13:30:06,4.998s,PASSED
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-24 13:30:03,2022-04-24 13:30:05,2.442s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-24 13:30:05,2022-04-24 13:30:05,0.023s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-24 13:30:05,2022-04-24 13:30:05,0.031s,PASSED
+private_token = access_token,,define / field api,,2022-04-24 13:30:05,2022-04-24 13:30:05,0.022s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-24 13:30:05,2022-04-24 13:30:05,0.001s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-24 13:30:05,2022-04-24 13:30:05,0.002s,PASSED
+logInfo($response_token),,,,2022-04-24 13:30:05,2022-04-24 13:30:05,0.066s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-24 13:30:05,2022-04-24 13:30:05,0.024s,PASSED
+"feedback = findTestObject(""pa-feedback"", [""token"":private_token, ""maskapai_id"":maskapai_id, ""order_id"":order_id, ""no_polis"":no_polis, ""base64"":base64, ""source"":source])",,,,2022-04-24 13:30:05,2022-04-24 13:30:06,0.420s,PASSED
+body2 = feedback.getBodyContent(),,menambahkan body request,,2022-04-24 13:30:06,2022-04-24 13:30:06,0.044s,PASSED
+req = body2.getText(),,,,2022-04-24 13:30:06,2022-04-24 13:30:06,0.025s,PASSED
+response = sendRequest(feedback),,Cek response data,,2022-04-24 13:30:06,2022-04-24 13:30:06,0.157s,PASSED
+response_feedback = response.getResponseText(),,show response to report in test suite,,2022-04-24 13:30:06,2022-04-24 13:30:06,0.003s,PASSED
+"markPassed(""Hit data ke : "" + no)",,-------------------------------------------------------,,2022-04-24 13:30:06,2022-04-24 13:30:06,0.013s,PASSED
+logInfo($req),,print log request text body,,2022-04-24 13:30:06,2022-04-24 13:30:06,0.003s,PASSED
+logInfo($response_feedback),,print log response text body,,2022-04-24 13:30:06,2022-04-24 13:30:06,0.005s,PASSED

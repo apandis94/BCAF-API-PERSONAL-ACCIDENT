@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Get Token,,,,2022-04-21 14:36:10,2022-04-21 14:36:21,10.722s,PASSED
+,,,,,,,
+Test Cases/1. get token -- pa-order,,,,2022-04-21 14:36:11,2022-04-21 14:36:21,10.034s,PASSED
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-21 14:36:13,2022-04-21 14:36:17,3.816s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-21 14:36:17,2022-04-21 14:36:17,0.042s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-21 14:36:17,2022-04-21 14:36:17,0.083s,PASSED
+private_token = access_token,,define / field api,,2022-04-21 14:36:17,2022-04-21 14:36:17,0.082s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-21 14:36:17,2022-04-21 14:36:17,0.001s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-21 14:36:17,2022-04-21 14:36:17,0.016s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-21 14:36:17,2022-04-21 14:36:17,0.005s,PASSED
+logInfo($response_token),,,,2022-04-21 14:36:17,2022-04-21 14:36:17,0.254s,PASSED
+"order = sendRequest(findTestObject(""pa-order"", [""token"":private_token, ""order_date"":order_date, ""maskapai_id"":maskapai_id, ""page"":page, ""row"":row, ""source"":source]))",,,,2022-04-21 14:36:17,2022-04-21 14:36:21,3.782s,PASSED
+get_order = order.getResponseText(),,show response to report in test suite,,2022-04-21 14:36:21,2022-04-21 14:36:21,0.003s,PASSED
+logInfo($get_order),,,,2022-04-21 14:36:21,2022-04-21 14:36:21,0.040s,PASSED

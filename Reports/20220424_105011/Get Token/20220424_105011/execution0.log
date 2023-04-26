@@ -1,0 +1,1699 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-04-24T10:50:37</date>
+  <millis>1650772237200</millis>
+  <sequence>0</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startSuite</method>
+  <thread>1</thread>
+  <message>Start Test Suite : Test Suites/Get Token</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="rerunTestFailImmediately">true</property>
+  <property name="retryCount">3</property>
+  <property name="name">Get Token</property>
+  <property name="description"></property>
+  <property name="id">Test Suites/Get Token</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:37</date>
+  <millis>1650772237237</millis>
+  <sequence>1</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostName = Nia Yusniati - Apandi</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="hostName">Nia Yusniati - Apandi</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:37</date>
+  <millis>1650772237239</millis>
+  <sequence>2</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>os = Windows 10 64bit</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="os">Windows 10 64bit</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:37</date>
+  <millis>1650772237241</millis>
+  <sequence>3</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostAddress = 192.168.129.156</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="hostAddress">192.168.129.156</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:37</date>
+  <millis>1650772237244</millis>
+  <sequence>4</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>katalonVersion = 8.1.0.208</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="katalonVersion">8.1.0.208</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:38</date>
+  <millis>1650772238004</millis>
+  <sequence>5</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/1. get token -- pa-order</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="remainingRetryCount">3</property>
+  <property name="name">Test Cases/1. get token -- pa-order</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/1. get token -- pa-order</property>
+  <property name="source">C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Test Cases\1. get token -- pa-order.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+  <property name="currentRetryCount">0</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:38</date>
+  <millis>1650772238593</millis>
+  <sequence>7</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>(Default) acc_token = 1</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:38</date>
+  <millis>1650772238652</millis>
+  <sequence>8</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>(Default) order_date = 2021-09-25</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:38</date>
+  <millis>1650772238723</millis>
+  <sequence>9</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>(Default) maskapai_id = PA_SIMAS</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:38</date>
+  <millis>1650772238785</millis>
+  <sequence>10</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>(Default) page = 1</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:38</date>
+  <millis>1650772238845</millis>
+  <sequence>11</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>(Default) row = 1</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:38</date>
+  <millis>1650772238892</millis>
+  <sequence>12</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>(Default) source = SIMAS</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:40</date>
+  <millis>1650772240532</millis>
+  <sequence>13</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : token = sendRequest(findTestObject(&amp;quot;get-token&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="startLine">21</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:45</date>
+  <millis>1650772245980</millis>
+  <sequence>16</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_105011\Get Token\20220424_105011\requests\main\0.har</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="harId">5aff949e-8be9-4bb4-af69-28f868233065</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246301</millis>
+  <sequence>17</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Send request successfully</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="testops-method-name">com.kms.katalon.core.webservice.keyword.builtin.SendRequestKeyword.sendRequest</property>
+  <property name="testops-execution-stacktrace"></property>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246304</millis>
+  <sequence>18</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : token = sendRequest(findTestObject(&amp;quot;get-token&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246305</millis>
+  <sequence>19</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : slurper = new groovy.json.JsonSlurper()</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="startLine">24</property>
+  <property name="stepIndex">2</property>
+  <property name="description">store json response to variable</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246346</millis>
+  <sequence>20</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : slurper = new groovy.json.JsonSlurper()</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246347</millis>
+  <sequence>21</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : get_token = slurper.parseText(token.getResponseBodyContent())</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="startLine">26</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246441</millis>
+  <sequence>22</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : get_token = slurper.parseText(token.getResponseBodyContent())</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246441</millis>
+  <sequence>23</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : private_token = access_token</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="startLine">29</property>
+  <property name="stepIndex">4</property>
+  <property name="description">define / field api</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246549</millis>
+  <sequence>24</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : private_token = access_token</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246549</millis>
+  <sequence>25</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : global_token = private_token</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="startLine">32</property>
+  <property name="stepIndex">5</property>
+  <property name="description">store var to global variable</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246551</millis>
+  <sequence>26</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : global_token = private_token</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246552</millis>
+  <sequence>27</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : println(&amp;quot;token is :&amp;quot; + global_token)</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="startLine">34</property>
+  <property name="stepIndex">6</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246565</millis>
+  <sequence>28</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : println(&amp;quot;token is :&amp;quot; + global_token)</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246567</millis>
+  <sequence>29</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : response_token = token.getResponseText()</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="startLine">37</property>
+  <property name="stepIndex">7</property>
+  <property name="description">show response to report in test suite</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246574</millis>
+  <sequence>30</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : response_token = token.getResponseText()</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:46</date>
+  <millis>1650772246575</millis>
+  <sequence>31</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : logInfo($response_token)</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="startLine">39</property>
+  <property name="stepIndex">8</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:47</date>
+  <millis>1650772247053</millis>
+  <sequence>32</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>
+            {
+                &amp;quot;token_type&amp;quot;: &amp;quot;BearerToken&amp;quot;,
+                &amp;quot;access_token&amp;quot;: &amp;quot;Aq2VNpYX6poXfAUXzAxlYZNxrUua&amp;quot;,
+                &amp;quot;expires_in&amp;quot;: &amp;quot;599&amp;quot;,
+                &amp;quot;scope&amp;quot;: &amp;quot;&amp;quot;
+            }
+        </message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:47</date>
+  <millis>1650772247060</millis>
+  <sequence>33</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : logInfo($response_token)</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:47</date>
+  <millis>1650772247064</millis>
+  <sequence>34</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : order = sendRequest(findTestObject(&amp;quot;pa-order&amp;quot;, [&amp;quot;token&amp;quot;:private_token, &amp;quot;order_date&amp;quot;:order_date, &amp;quot;maskapai_id&amp;quot;:maskapai_id, &amp;quot;page&amp;quot;:page, &amp;quot;row&amp;quot;:row, &amp;quot;source&amp;quot;:source]))</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="startLine">41</property>
+  <property name="stepIndex">9</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:52</date>
+  <millis>1650772252627</millis>
+  <sequence>37</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_105011\Get Token\20220424_105011\requests\main\1.har</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="harId">b1d2866c-15fb-4b48-9dea-899d8804083a</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:52</date>
+  <millis>1650772252644</millis>
+  <sequence>38</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Send request successfully</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="testops-method-name">com.kms.katalon.core.webservice.keyword.builtin.SendRequestKeyword.sendRequest</property>
+  <property name="testops-execution-stacktrace"></property>
+</record>
+<record>
+  <date>2022-04-24T10:50:52</date>
+  <millis>1650772252647</millis>
+  <sequence>39</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : order = sendRequest(findTestObject(&amp;quot;pa-order&amp;quot;, [&amp;quot;token&amp;quot;:private_token, &amp;quot;order_date&amp;quot;:order_date, &amp;quot;maskapai_id&amp;quot;:maskapai_id, &amp;quot;page&amp;quot;:page, &amp;quot;row&amp;quot;:row, &amp;quot;source&amp;quot;:source]))</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:52</date>
+  <millis>1650772252648</millis>
+  <sequence>40</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : get_order = order.getResponseText()</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="startLine">45</property>
+  <property name="stepIndex">10</property>
+  <property name="description">show response to report in test suite</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:52</date>
+  <millis>1650772252654</millis>
+  <sequence>41</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : get_order = order.getResponseText()</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:52</date>
+  <millis>1650772252655</millis>
+  <sequence>42</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : logInfo($get_order)</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="startLine">47</property>
+  <property name="stepIndex">11</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:52</date>
+  <millis>1650772252660</millis>
+  <sequence>43</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>{
+  &amp;quot;ErrorCode&amp;quot; : &amp;quot;04&amp;quot;,
+  &amp;quot;ErrorMessage&amp;quot; : &amp;quot;Data pada page ini telah diorder&amp;quot;,
+  &amp;quot;Page&amp;quot; : &amp;quot;&amp;quot;,
+  &amp;quot;TotalPage&amp;quot; : &amp;quot;425&amp;quot;,
+  &amp;quot;TotalDataOrder&amp;quot; : &amp;quot;425&amp;quot;,
+  &amp;quot;TotalDataBelumTerimaPolis&amp;quot; : &amp;quot;38&amp;quot;,
+  &amp;quot;TotalDataEndorse&amp;quot; : &amp;quot;0&amp;quot;,
+  &amp;quot;Data&amp;quot; : {
+    &amp;quot;Order&amp;quot; : [ ],
+    &amp;quot;BelumTerimaPolis&amp;quot; : [ {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;15C939C6-D83F-4FF2-BF9F-001268802457&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2714727&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;113&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;1900-01-01T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;11230&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-07-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2024-06-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;A2161EAF-0E80-48DC-AE02-001443EF43A8&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2709117&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;36&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2008-12-19T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;97127&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2022-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;940E9A1A-1772-465A-AE84-001676D1F4F7&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2715275&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;3318100808880010&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;1988-08-08T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;59114&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-07-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2023-06-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;771B82DC-A851-4DF7-BC77-0020013F1A16&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2750251&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;16969&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-09-29T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2026-08-29T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;9B43AD71-7686-488D-A78A-00220136069F&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2751881&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;40215&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-09-22T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2021-12-22T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;DA520A87-E167-4373-8363-002885CDF004&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2732525&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;3404060106870001&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;1987-06-01T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;55196&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-09-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2024-08-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;5007FE36-E411-4CC0-AC50-00289B0539DA&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2712231&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;30&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2016-09-09T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;40553&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-07-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2023-06-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;9704C84E-C61B-4AD0-BDAE-003D7D46C629&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2713480&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;50742&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-07-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2027-06-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;CB5A9C48-6ABC-4874-8973-006501DCBE14&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2734819&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;93111&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-09-20T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2024-08-20T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;6269F5D7-9EB9-4185-849F-0079C44E02AB&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2748688&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;92113&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-09-24T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2025-08-24T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;E2C93E06-B401-4483-BA48-007D826E07EE&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2691102&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;14240&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2024-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;9FAD2002-6BD2-4324-ACB1-00B59E6B70EC&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2748237&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;3175095303670002&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;1967-03-13T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;40291&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-09-21T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2025-08-21T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;A7507347-4115-4A89-99CD-00D81B1E339A&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2744476&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;15139&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-09-28T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2025-08-28T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;7B8F11FB-9B0B-4C2D-AB3C-00F19BCCD82F&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2752595&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;16965&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-09-28T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2025-08-28T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;BBB186DB-3DAB-486F-BE36-00FBCA1ED5E9&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2704723&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;96181&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2025-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;3EEDEF80-696F-4A8E-A37D-010B0A329EFD&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2715770&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;3175072810610001&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;1961-10-28T00:00:00.000+0730&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;13440&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2023-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;0550CBED-A956-46C1-8C92-01482F3A5281&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2710962&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;28784&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2025-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;31088472-3BE5-473A-A2A3-7FA39BEF7DC0&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2690907&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;60115&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2022-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;5FA5FBC1-40F8-41B4-B6C0-89222F4EF69B&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2713549&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;16340&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2026-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;FE53CECB-A061-4684-81BD-90E5FE4C63EA&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2715276&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;60179&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2025-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;21CCF91C-7FCC-4BC0-BFC7-90FAF069EF0B&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2657663&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;HILDA&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;3209098989098765&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;FSDF&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;1959-01-07T00:00:00.000+0730&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SDFS&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SDFS&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;DFSDF&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SDFSDF&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SDFSD&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;1212&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-01T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2027-07-26T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;D3D7F91D-61B9-434A-99DC-06E7EFA89C88&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2714436&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;09.5303.100869.0257&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;1969-08-10T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;15810&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2025-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;6DB8D99F-B44B-4261-B4F0-863842E70AFC&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2691575&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;40559&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2024-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;B0666FC3-8182-437F-B44C-86556F508826&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2714600&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;3173020807750004&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;1975-07-08T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;11440&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2022-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;BC1AB1D5-EE89-4FBC-B7E8-018DFDBF5ED2&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2712918&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;38656&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-07-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2024-06-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;292348A1-826A-4DF3-8E39-019993CF8A3C&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2711665&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;28992&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-07-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2025-06-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;F4C8E0ED-532F-42F1-9CAE-01EDAD7E74DF&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2710076&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;31627&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-07-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2025-06-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;A5157CA2-D9EB-4AB1-9A37-0DC2CF4248C0&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2714570&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;61256&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2025-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;0E45D11A-A1F6-4003-A2D0-8F43EEE14BBB&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2710578&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;15148&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2023-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;75991D4A-53EE-4D49-8DF1-80B68E777843&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2713445&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;3175024206770002&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;1977-06-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;13230&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2023-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;FF8F7E27-BE35-42E5-B375-0294BC080CCF&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2712879&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;10220&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-07-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2024-06-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;D165D01E-735B-44C4-9CCA-02A71BB6B9C6&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2707760&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;51141&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-07-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2024-06-30T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;D56E062F-CA3F-4546-AAC7-8841F876BAEA&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2705912&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;3573031810700002&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;1970-10-18T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;65112&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2024-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;76FB49BF-EAC8-46B4-A2BA-9719F1FDA4D2&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2690868&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;40921&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2024-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;63300930-82A4-4EC1-8D6E-9229C2B3D6EA&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2694605&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;3171036401660003&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;1966-01-24T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;10610&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2025-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;7B6501F6-72B3-4E34-A884-0DFC21337C02&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2655029&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;11310&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2022-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;974CA323-195B-4BEB-99C1-09B0A04A9248&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2712666&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;M&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;15416&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2025-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    }, {
+      &amp;quot;Konsumen&amp;quot; : {
+        &amp;quot;OrderID&amp;quot; : &amp;quot;3766F63F-7327-4681-B285-086FD5D9A3E5&amp;quot;,
+        &amp;quot;AppID&amp;quot; : &amp;quot;2714501&amp;quot;,
+        &amp;quot;NoKontrak&amp;quot; : &amp;quot;&amp;quot;,
+        &amp;quot;Nama&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;JenisKelamin&amp;quot; : &amp;quot;F&amp;quot;,
+        &amp;quot;NIK&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatLahir&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TanggalLahir&amp;quot; : &amp;quot;2022-02-12T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Alamat&amp;quot; : {
+          &amp;quot;DetailAlamat&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kelurahan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Kecamatan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KabupatenKota&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;Provinsi&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+          &amp;quot;KodePos&amp;quot; : &amp;quot;61321&amp;quot;
+        },
+        &amp;quot;Perkerjaan&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;,
+        &amp;quot;TempatKonsumenBekerja&amp;quot; : &amp;quot;SCRAMBLE&amp;quot;
+      },
+      &amp;quot;Polis&amp;quot; : {
+        &amp;quot;TanggalMulaiPolis&amp;quot; : &amp;quot;2021-08-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;TanggalSelesaiPolis&amp;quot; : &amp;quot;2026-07-02T00:00:00.000+0700&amp;quot;,
+        &amp;quot;Rate&amp;quot; : &amp;quot;0.2&amp;quot;,
+        &amp;quot;TotalSumInsured&amp;quot; : &amp;quot;200000000&amp;quot;
+      }
+    } ],
+    &amp;quot;Endorse&amp;quot; : [ ]
+  }
+}</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:52</date>
+  <millis>1650772252687</millis>
+  <sequence>44</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : logInfo($get_order)</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:52</date>
+  <millis>1650772252688</millis>
+  <sequence>45</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/1. get token -- pa-order</message>
+  <nestedLevel>1</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:52</date>
+  <millis>1650772252693</millis>
+  <sequence>46</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/1. get token -- pa-order</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="remainingRetryCount">3</property>
+  <property name="currentRetryCount">0</property>
+  <property name="keywordsUsage">{
+  &quot;web_ui&quot;: false,
+  &quot;web_service&quot;: true,
+  &quot;cucumber&quot;: false,
+  &quot;builtin&quot;: false,
+  &quot;mobile&quot;: false,
+  &quot;windows&quot;: false,
+  &quot;testng&quot;: false
+}</property>
+</record>
+<record>
+  <date>2022-04-24T10:50:52</date>
+  <millis>1650772252714</millis>
+  <sequence>47</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start listener action : exportKatalonReports</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:54</date>
+  <millis>1650772254333</millis>
+  <sequence>135</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Start generating HTML report folder at: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_105011\Get Token\20220424_105011...</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:54</date>
+  <millis>1650772254498</millis>
+  <sequence>136</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>HTML report generated</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:54</date>
+  <millis>1650772254500</millis>
+  <sequence>137</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Start generating CSV report folder at: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_105011\Get Token\20220424_105011...</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:54</date>
+  <millis>1650772254593</millis>
+  <sequence>138</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>CSV report generated</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:54</date>
+  <millis>1650772254673</millis>
+  <sequence>140</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End listener action : exportKatalonReports</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2022-04-24T10:50:55</date>
+  <millis>1650772255015</millis>
+  <sequence>141</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endSuite</method>
+  <thread>1</thread>
+  <message>End Test Suite : Test Suites/Get Token</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+</log>

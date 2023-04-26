@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Feedback,,,,2022-04-24 11:15:19,2022-04-24 11:15:32,12.246s,PASSED
+,,,,,,,
+Test Cases/5. get token -- pa-feedback,,,,2022-04-24 11:15:20,2022-04-24 11:15:32,11.430s,PASSED
+"token = sendRequest(findTestObject(""get-token""))",,,,2022-04-24 11:15:23,2022-04-24 11:15:29,6.065s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-04-24 11:15:29,2022-04-24 11:15:29,0.031s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-04-24 11:15:29,2022-04-24 11:15:29,0.057s,PASSED
+private_token = access_token,,define / field api,,2022-04-24 11:15:29,2022-04-24 11:15:29,0.026s,PASSED
+global_token = private_token,,store var to global variable,,2022-04-24 11:15:29,2022-04-24 11:15:29,0.002s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-04-24 11:15:29,2022-04-24 11:15:29,0.003s,PASSED
+logInfo($response_token),,,,2022-04-24 11:15:29,2022-04-24 11:15:29,0.118s,PASSED
+"println(""token is :"" + global_token)",,,,2022-04-24 11:15:29,2022-04-24 11:15:29,0.012s,PASSED
+"feedback = findTestObject(""pa-feedback"", [""token"":private_token, ""maskapai_id"":maskapai_id, ""order_id"":order_id, ""no_polis"":no_polis, ""base64"":base64, ""source"":source])",,,,2022-04-24 11:15:29,2022-04-24 11:15:30,0.721s,PASSED
+"markPassed(""verifikasi data ke : "" + no)",,,,2022-04-24 11:15:30,2022-04-24 11:15:30,0.024s,PASSED
+body2 = feedback.getBodyContent(),,menambahkan body request,,2022-04-24 11:15:30,2022-04-24 11:15:30,0.078s,PASSED
+req = body2.getText(),,,,2022-04-24 11:15:30,2022-04-24 11:15:30,0.070s,PASSED
+logInfo($req),,,,2022-04-24 11:15:30,2022-04-24 11:15:30,0.005s,PASSED
+response = sendRequest(feedback),,Cek response data,,2022-04-24 11:15:30,2022-04-24 11:15:32,1.328s,PASSED
+response_feedback = response.getResponseText(),,show response to report in test suite,,2022-04-24 11:15:32,2022-04-24 11:15:32,0.004s,PASSED
+logInfo($response_feedback),,,,2022-04-24 11:15:32,2022-04-24 11:15:32,0.005s,PASSED

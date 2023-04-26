@@ -1,0 +1,2622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Feedback" time="66.578" tests="31" failures="0" errors="0">
+   <testsuite name="Feedback" tests="31" failures="0" errors="0" time="66.578" skipped="0" timestamp="2022-04-24 12:23:38" hostname="Nia Yusniati - Apandi" id="Test Suites/Feedback">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Nia Yusniati\\Git_Asa\\Personal Accident\\Reports\\20220424_122310\\Feedback\\20220424_122310"/>
+         <property name="logFiles" value="C:\\Users\\Nia Yusniati\\Git_Asa\\Personal Accident\\Reports\\20220424_122310\\Feedback\\20220424_122310\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Nia Yusniati - Apandi"/>
+         <property name="hostAddress" value="192.168.129.156"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="7.786" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:23:38 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:23:40 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:23:44 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\0.har
+
+2022-04-24 12:23:44 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:23:44 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:23:44 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:23:44 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:23:44 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:23:44 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:23:44 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "ZliQaG8dFDoPt0Rw9oE6GpKFA6u4",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:44 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "ZliQaG8dFDoPt0Rw9oE6GpKFA6u4",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:44 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:23:44 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:23:44 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:23:44 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:23:44 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:23:46 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\1.har
+
+2022-04-24 12:23:46 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:23:46 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:23:46 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 1
+
+2022-04-24 12:23:46 - [MESSAGE][PASSED] - Hit data ke : 1
+
+2022-04-24 12:23:46 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "29D947AC-1F9A-4871-807A-0008CA1B533B",
+  "NoPolis": "POLIS-SIMAS-PA-003",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:23:46 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "29D947AC-1F9A-4871-807A-0008CA1B533B",
+  "NoPolis": "POLIS-SIMAS-PA-003",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:23:46 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "03",
+  "errorMessage" : "Order dengan ID tersebut sudah pernah menerima nopolis"
+}
+
+2022-04-24 12:23:46 - [MESSAGE][INFO] - {
+  "errorCode" : "03",
+  "errorMessage" : "Order dengan ID tersebut sudah pernah menerima nopolis"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="4.281" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:23:46 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:23:46 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:23:49 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\2.har
+
+2022-04-24 12:23:49 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:23:49 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:23:49 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:23:49 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:23:49 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:23:49 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:23:49 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "hGejJqmWGnucv6u2ndXYiXjxIpWu",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:49 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "hGejJqmWGnucv6u2ndXYiXjxIpWu",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:49 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:23:49 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:23:49 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:23:49 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:23:49 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:23:50 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\3.har
+
+2022-04-24 12:23:50 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:23:50 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:23:50 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 2
+
+2022-04-24 12:23:50 - [MESSAGE][PASSED] - Hit data ke : 2
+
+2022-04-24 12:23:50 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "15C939C6-D83F-4FF2-BF9F-001268802457",
+  "NoPolis": "POLIS-SIMAS-PA-005",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:23:50 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "15C939C6-D83F-4FF2-BF9F-001268802457",
+  "NoPolis": "POLIS-SIMAS-PA-005",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:23:50 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "03",
+  "errorMessage" : "Order dengan ID tersebut sudah pernah menerima nopolis"
+}
+
+2022-04-24 12:23:50 - [MESSAGE][INFO] - {
+  "errorCode" : "03",
+  "errorMessage" : "Order dengan ID tersebut sudah pernah menerima nopolis"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="2.31" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:23:51 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:23:51 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:23:52 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\4.har
+
+2022-04-24 12:23:52 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:23:52 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:23:52 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:23:52 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:23:52 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:23:52 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:23:52 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "uJRdD5FeIu9HzoIUVATJvHOp1Kyu",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:52 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "uJRdD5FeIu9HzoIUVATJvHOp1Kyu",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:52 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:23:52 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:23:52 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:23:52 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:23:52 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:23:53 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\5.har
+
+2022-04-24 12:23:53 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:23:53 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:23:53 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 3
+
+2022-04-24 12:23:53 - [MESSAGE][PASSED] - Hit data ke : 3
+
+2022-04-24 12:23:53 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "A2161EAF-0E80-48DC-AE02-001443EF43A8",
+  "NoPolis": "POLIS-SIMAS-PA-006",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:23:53 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "A2161EAF-0E80-48DC-AE02-001443EF43A8",
+  "NoPolis": "POLIS-SIMAS-PA-006",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:23:53 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "03",
+  "errorMessage" : "Order dengan ID tersebut sudah pernah menerima nopolis"
+}
+
+2022-04-24 12:23:53 - [MESSAGE][INFO] - {
+  "errorCode" : "03",
+  "errorMessage" : "Order dengan ID tersebut sudah pernah menerima nopolis"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.133" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:23:53 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:23:53 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:23:53 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\6.har
+
+2022-04-24 12:23:53 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:23:53 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:23:53 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:23:53 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:23:53 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:23:53 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:23:53 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "pVmHZ0WjeL8al6pgwntc8xOEx5TV",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:53 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "pVmHZ0WjeL8al6pgwntc8xOEx5TV",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:53 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:23:53 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:23:54 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:23:54 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:23:54 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:23:54 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\7.har
+
+2022-04-24 12:23:54 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:23:54 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:23:54 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 4
+
+2022-04-24 12:23:54 - [MESSAGE][PASSED] - Hit data ke : 4
+
+2022-04-24 12:23:54 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "940E9A1A-1772-465A-AE84-001676D1F4F7",
+  "NoPolis": "POLIS-SIMAS-PA-007",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:23:54 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "940E9A1A-1772-465A-AE84-001676D1F4F7",
+  "NoPolis": "POLIS-SIMAS-PA-007",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:23:54 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:23:54 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="2.195" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:23:54 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:23:54 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:23:55 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\8.har
+
+2022-04-24 12:23:55 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:23:55 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:23:55 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:23:55 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:23:55 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:23:55 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:23:55 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "lEAJliRQztEd8Mi5B0oDfTJ1lLAf",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:55 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "lEAJliRQztEd8Mi5B0oDfTJ1lLAf",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:55 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:23:55 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:23:55 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:23:55 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:23:55 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:23:56 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\9.har
+
+2022-04-24 12:23:56 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:23:56 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:23:56 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 5
+
+2022-04-24 12:23:56 - [MESSAGE][PASSED] - Hit data ke : 5
+
+2022-04-24 12:23:56 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "5007FE36-E411-4CC0-AC50-00289B0539DA",
+  "NoPolis": "POLIS-SIMAS-PA-008",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:23:56 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "5007FE36-E411-4CC0-AC50-00289B0539DA",
+  "NoPolis": "POLIS-SIMAS-PA-008",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:23:56 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:23:56 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.089" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:23:57 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:23:57 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:23:57 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\10.har
+
+2022-04-24 12:23:57 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:23:57 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:23:57 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:23:57 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:23:57 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:23:57 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:23:57 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "x7FIXDjbEE67QbFgOsGt2T66WP41",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:57 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "x7FIXDjbEE67QbFgOsGt2T66WP41",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:57 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:23:57 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:23:57 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:23:57 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:23:57 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:23:58 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\11.har
+
+2022-04-24 12:23:58 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:23:58 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:23:58 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 6
+
+2022-04-24 12:23:58 - [MESSAGE][PASSED] - Hit data ke : 6
+
+2022-04-24 12:23:58 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "9704C84E-C61B-4AD0-BDAE-003D7D46C629",
+  "NoPolis": "POLIS-SIMAS-PA-009",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:23:58 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "9704C84E-C61B-4AD0-BDAE-003D7D46C629",
+  "NoPolis": "POLIS-SIMAS-PA-009",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:23:58 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:23:58 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.811" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:23:58 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:23:58 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:23:58 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\12.har
+
+2022-04-24 12:23:58 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:23:58 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:23:58 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:23:58 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:23:58 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:23:58 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:23:58 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "TxzAyFHllWxQyZV4YNZKiMAMfPeV",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:58 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "TxzAyFHllWxQyZV4YNZKiMAMfPeV",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:23:58 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:23:58 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:23:59 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:23:59 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:23:59 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:00 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\13.har
+
+2022-04-24 12:24:00 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:00 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:00 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 7
+
+2022-04-24 12:24:00 - [MESSAGE][PASSED] - Hit data ke : 7
+
+2022-04-24 12:24:00 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "E2C93E06-B401-4483-BA48-007D826E07EE",
+  "NoPolis": "POLIS-SIMAS-PA-010",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:00 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "E2C93E06-B401-4483-BA48-007D826E07EE",
+  "NoPolis": "POLIS-SIMAS-PA-010",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:00 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:00 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.842" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:00 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:00 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:01 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\14.har
+
+2022-04-24 12:24:01 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:01 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:01 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:01 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:01 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:01 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:01 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "8gKtLUuUZDzZCw7Qnlk6BuWK5i75",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:01 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "8gKtLUuUZDzZCw7Qnlk6BuWK5i75",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:01 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:01 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:01 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:01 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:01 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:02 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\15.har
+
+2022-04-24 12:24:02 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:02 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:02 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 8
+
+2022-04-24 12:24:02 - [MESSAGE][PASSED] - Hit data ke : 8
+
+2022-04-24 12:24:02 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "BBB186DB-3DAB-486F-BE36-00FBCA1ED5E9",
+  "NoPolis": "POLIS-SIMAS-PA-011",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:02 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "BBB186DB-3DAB-486F-BE36-00FBCA1ED5E9",
+  "NoPolis": "POLIS-SIMAS-PA-011",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:02 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:02 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.537" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:02 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:02 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:02 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\16.har
+
+2022-04-24 12:24:02 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:02 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:02 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:02 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:02 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:02 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:02 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "MJZUVAK8B4AtTPViG7JizLlcrEoY",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:02 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "MJZUVAK8B4AtTPViG7JizLlcrEoY",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:02 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:02 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:03 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:03 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:03 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:03 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\17.har
+
+2022-04-24 12:24:03 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:03 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:03 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 9
+
+2022-04-24 12:24:03 - [MESSAGE][PASSED] - Hit data ke : 9
+
+2022-04-24 12:24:03 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "3EEDEF80-696F-4A8E-A37D-010B0A329EFD",
+  "NoPolis": "POLIS-SIMAS-PA-012",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:03 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "3EEDEF80-696F-4A8E-A37D-010B0A329EFD",
+  "NoPolis": "POLIS-SIMAS-PA-012",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:03 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:03 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="2.128" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:03 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:03 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:05 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\18.har
+
+2022-04-24 12:24:05 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:05 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:05 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:05 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:05 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:05 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:05 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "mhq9Xgn1paG0ydWpyPg9oxsDWJGA",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:05 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "mhq9Xgn1paG0ydWpyPg9oxsDWJGA",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:05 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:05 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:05 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:05 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:05 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:06 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\19.har
+
+2022-04-24 12:24:06 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:06 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:06 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 10
+
+2022-04-24 12:24:06 - [MESSAGE][PASSED] - Hit data ke : 10
+
+2022-04-24 12:24:06 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "0550CBED-A956-46C1-8C92-01482F3A5281",
+  "NoPolis": "POLIS-SIMAS-PA-013",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:06 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "0550CBED-A956-46C1-8C92-01482F3A5281",
+  "NoPolis": "POLIS-SIMAS-PA-013",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:06 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:06 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="2.032" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:06 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:06 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:06 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\20.har
+
+2022-04-24 12:24:06 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:06 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:06 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:06 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:06 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:06 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:06 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "hGEePPOf7BJWdN7AknrGL7CAGmbc",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:06 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "hGEePPOf7BJWdN7AknrGL7CAGmbc",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:06 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:06 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:07 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:07 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:07 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:08 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\21.har
+
+2022-04-24 12:24:08 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:08 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:08 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 11
+
+2022-04-24 12:24:08 - [MESSAGE][PASSED] - Hit data ke : 11
+
+2022-04-24 12:24:08 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "BC1AB1D5-EE89-4FBC-B7E8-018DFDBF5ED2",
+  "NoPolis": "POLIS-SIMAS-PA-014",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:08 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "BC1AB1D5-EE89-4FBC-B7E8-018DFDBF5ED2",
+  "NoPolis": "POLIS-SIMAS-PA-014",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:08 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:08 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.644" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:08 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:08 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:09 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\22.har
+
+2022-04-24 12:24:09 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:09 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:09 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:09 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:09 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:09 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:09 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "S0qZAonvUOXZpB4UJH0c0BD6b9NG",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:09 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "S0qZAonvUOXZpB4UJH0c0BD6b9NG",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:09 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:09 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:09 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:09 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:09 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:10 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\23.har
+
+2022-04-24 12:24:10 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 12
+
+2022-04-24 12:24:10 - [MESSAGE][PASSED] - Hit data ke : 12
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "292348A1-826A-4DF3-8E39-019993CF8A3C",
+  "NoPolis": "POLIS-SIMAS-PA-015",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:10 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "292348A1-826A-4DF3-8E39-019993CF8A3C",
+  "NoPolis": "POLIS-SIMAS-PA-015",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:10 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.034" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:10 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:10 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\24.har
+
+2022-04-24 12:24:10 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "ZKMJkYEHC0FEhk23NT0z8VzAeE4g",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:10 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "ZKMJkYEHC0FEhk23NT0z8VzAeE4g",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:10 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:11 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\25.har
+
+2022-04-24 12:24:11 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:11 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:11 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 13
+
+2022-04-24 12:24:11 - [MESSAGE][PASSED] - Hit data ke : 13
+
+2022-04-24 12:24:11 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "F4C8E0ED-532F-42F1-9CAE-01EDAD7E74DF",
+  "NoPolis": "POLIS-SIMAS-PA-016",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:11 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "F4C8E0ED-532F-42F1-9CAE-01EDAD7E74DF",
+  "NoPolis": "POLIS-SIMAS-PA-016",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:11 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:11 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="2.631" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:11 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:11 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:13 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\26.har
+
+2022-04-24 12:24:13 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "ZO8VoQWCUxVIA67Pv3CzQ4TAQ5tS",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:13 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "ZO8VoQWCUxVIA67Pv3CzQ4TAQ5tS",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:13 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\27.har
+
+2022-04-24 12:24:13 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 14
+
+2022-04-24 12:24:13 - [MESSAGE][PASSED] - Hit data ke : 14
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "FF8F7E27-BE35-42E5-B375-0294BC080CCF",
+  "NoPolis": "POLIS-SIMAS-PA-017",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:13 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "FF8F7E27-BE35-42E5-B375-0294BC080CCF",
+  "NoPolis": "POLIS-SIMAS-PA-017",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:13 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:13 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.013" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:14 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:14 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:14 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\28.har
+
+2022-04-24 12:24:14 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:14 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:14 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:14 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:14 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:14 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:14 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "WBc0qZdxtcHF4cxGbWcXoJCINSl3",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:14 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "WBc0qZdxtcHF4cxGbWcXoJCINSl3",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:14 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:14 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:14 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:14 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:14 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:15 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\29.har
+
+2022-04-24 12:24:15 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:15 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:15 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 15
+
+2022-04-24 12:24:15 - [MESSAGE][PASSED] - Hit data ke : 15
+
+2022-04-24 12:24:15 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "D165D01E-735B-44C4-9CCA-02A71BB6B9C6",
+  "NoPolis": "POLIS-SIMAS-PA-018",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:15 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS ",
+  "OrderID": "D165D01E-735B-44C4-9CCA-02A71BB6B9C6",
+  "NoPolis": "POLIS-SIMAS-PA-018",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:15 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:15 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="2.419" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:15 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:15 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:16 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\30.har
+
+2022-04-24 12:24:16 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:16 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:16 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:16 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:16 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:16 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:16 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "yRAu4zASSi4ATrPGFtYVmPjxrAJI",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:16 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "yRAu4zASSi4ATrPGFtYVmPjxrAJI",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:16 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:16 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:16 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:16 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:16 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:17 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\31.har
+
+2022-04-24 12:24:17 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:17 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:17 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 16
+
+2022-04-24 12:24:17 - [MESSAGE][PASSED] - Hit data ke : 16
+
+2022-04-24 12:24:17 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "D3D7F91D-61B9-434A-99DC-06E7EFA89C88",
+  "NoPolis": "POLIS-SIMAS-PA-019",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:17 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "D3D7F91D-61B9-434A-99DC-06E7EFA89C88",
+  "NoPolis": "POLIS-SIMAS-PA-019",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:17 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:17 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.125" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:17 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:17 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:18 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\32.har
+
+2022-04-24 12:24:18 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "uPH9hkoBgFXSYYvvTZpW5l6oXjVo",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:18 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "uPH9hkoBgFXSYYvvTZpW5l6oXjVo",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:18 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\33.har
+
+2022-04-24 12:24:18 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 17
+
+2022-04-24 12:24:18 - [MESSAGE][PASSED] - Hit data ke : 17
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "3766F63F-7327-4681-B285-086FD5D9A3E5",
+  "NoPolis": "POLIS-SIMAS-PA-020",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:18 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "3766F63F-7327-4681-B285-086FD5D9A3E5",
+  "NoPolis": "POLIS-SIMAS-PA-020",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:18 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:18 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="2.517" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:19 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:19 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:20 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\34.har
+
+2022-04-24 12:24:20 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:20 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:20 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:20 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:20 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:20 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:20 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "pjKyFpnxDpBs4DCMrRunlvjsRYZ1",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:20 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "pjKyFpnxDpBs4DCMrRunlvjsRYZ1",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:20 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:20 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:20 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:20 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:20 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:21 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\35.har
+
+2022-04-24 12:24:21 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:21 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:21 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 18
+
+2022-04-24 12:24:21 - [MESSAGE][PASSED] - Hit data ke : 18
+
+2022-04-24 12:24:21 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "974CA323-195B-4BEB-99C1-09B0A04A9248",
+  "NoPolis": "POLIS-SIMAS-PA-021",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:21 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "974CA323-195B-4BEB-99C1-09B0A04A9248",
+  "NoPolis": "POLIS-SIMAS-PA-021",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:21 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:21 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.113" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:21 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:21 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:22 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\36.har
+
+2022-04-24 12:24:22 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "XQQ3j3KwVxSJJhdllOIolEZCI8Yz",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:22 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "XQQ3j3KwVxSJJhdllOIolEZCI8Yz",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:22 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\37.har
+
+2022-04-24 12:24:22 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 19
+
+2022-04-24 12:24:22 - [MESSAGE][PASSED] - Hit data ke : 19
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "A5157CA2-D9EB-4AB1-9A37-0DC2CF4248C0",
+  "NoPolis": "POLIS-SIMAS-PA-022",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:22 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "A5157CA2-D9EB-4AB1-9A37-0DC2CF4248C0",
+  "NoPolis": "POLIS-SIMAS-PA-022",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:22 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="2.47" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:22 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:22 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:23 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\38.har
+
+2022-04-24 12:24:23 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:23 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:23 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:23 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:23 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:23 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:23 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "7xs1fbiNwWqMVE9zFgzGd492Oyhd",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:23 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "7xs1fbiNwWqMVE9zFgzGd492Oyhd",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:23 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:23 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:23 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:23 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:23 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:25 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\39.har
+
+2022-04-24 12:24:25 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:25 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:25 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 20
+
+2022-04-24 12:24:25 - [MESSAGE][PASSED] - Hit data ke : 20
+
+2022-04-24 12:24:25 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "7B6501F6-72B3-4E34-A884-0DFC21337C02",
+  "NoPolis": "POLIS-SIMAS-PA-023",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:25 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "7B6501F6-72B3-4E34-A884-0DFC21337C02",
+  "NoPolis": "POLIS-SIMAS-PA-023",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:25 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:25 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.061" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:25 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:25 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:25 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\40.har
+
+2022-04-24 12:24:25 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:25 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:25 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:25 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:25 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:25 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:25 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "v8Z6Bl2TmAbspeSMYfGI3aIuc0A5",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:25 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "v8Z6Bl2TmAbspeSMYfGI3aIuc0A5",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:25 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:25 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:26 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:26 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:26 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:26 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\41.har
+
+2022-04-24 12:24:26 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:26 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:26 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 21
+
+2022-04-24 12:24:26 - [MESSAGE][PASSED] - Hit data ke : 21
+
+2022-04-24 12:24:26 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "31088472-3BE5-473A-A2A3-7FA39BEF7DC0",
+  "NoPolis": "POLIS-SIMAS-PA-024",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:26 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "31088472-3BE5-473A-A2A3-7FA39BEF7DC0",
+  "NoPolis": "POLIS-SIMAS-PA-024",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:26 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:26 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="2.413" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:26 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:26 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:27 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\42.har
+
+2022-04-24 12:24:27 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:27 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:27 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:27 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:27 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:27 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:27 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "l4pjWq8LZdGY35nyDAjrnIxcnuTz",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:27 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "l4pjWq8LZdGY35nyDAjrnIxcnuTz",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:27 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:27 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:27 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:27 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:27 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:29 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\43.har
+
+2022-04-24 12:24:29 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 22
+
+2022-04-24 12:24:29 - [MESSAGE][PASSED] - Hit data ke : 22
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "75991D4A-53EE-4D49-8DF1-80B68E777843",
+  "NoPolis": "POLIS-SIMAS-PA-025",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:29 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "75991D4A-53EE-4D49-8DF1-80B68E777843",
+  "NoPolis": "POLIS-SIMAS-PA-025",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:29 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.008" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:29 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:29 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\44.har
+
+2022-04-24 12:24:29 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "ZAqtKMAu2EKJlcNOwAy5ueQt9C8o",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:29 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "ZAqtKMAu2EKJlcNOwAy5ueQt9C8o",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:29 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:30 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\45.har
+
+2022-04-24 12:24:30 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:30 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:30 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 23
+
+2022-04-24 12:24:30 - [MESSAGE][PASSED] - Hit data ke : 23
+
+2022-04-24 12:24:30 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "6DB8D99F-B44B-4261-B4F0-863842E70AFC",
+  "NoPolis": "POLIS-SIMAS-PA-026",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:30 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "6DB8D99F-B44B-4261-B4F0-863842E70AFC",
+  "NoPolis": "POLIS-SIMAS-PA-026",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:30 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:30 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.01" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:30 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:30 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:30 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\46.har
+
+2022-04-24 12:24:30 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:30 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:30 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:30 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:30 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:30 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:30 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "K3L0XBDG4qFATy6lp24tnOFSyfAu",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:30 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "K3L0XBDG4qFATy6lp24tnOFSyfAu",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:30 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:30 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:31 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:31 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:31 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:31 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\47.har
+
+2022-04-24 12:24:31 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:31 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:31 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 24
+
+2022-04-24 12:24:31 - [MESSAGE][PASSED] - Hit data ke : 24
+
+2022-04-24 12:24:31 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "B0666FC3-8182-437F-B44C-86556F508826",
+  "NoPolis": "POLIS-SIMAS-PA-027",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:31 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "B0666FC3-8182-437F-B44C-86556F508826",
+  "NoPolis": "POLIS-SIMAS-PA-027",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:31 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:31 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="2.291" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:31 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:31 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:32 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\48.har
+
+2022-04-24 12:24:32 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:32 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:32 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:32 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:32 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:32 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:32 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "SbTkJ8IecLsce4FDrzl1NUUMtYiH",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:32 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "SbTkJ8IecLsce4FDrzl1NUUMtYiH",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:33 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:33 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:33 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:33 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:33 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:33 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\49.har
+
+2022-04-24 12:24:33 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:33 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:33 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 25
+
+2022-04-24 12:24:33 - [MESSAGE][PASSED] - Hit data ke : 25
+
+2022-04-24 12:24:33 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "D56E062F-CA3F-4546-AAC7-8841F876BAEA",
+  "NoPolis": "POLIS-SIMAS-PA-028",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:33 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "D56E062F-CA3F-4546-AAC7-8841F876BAEA",
+  "NoPolis": "POLIS-SIMAS-PA-028",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:33 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:33 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.059" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:33 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:33 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:34 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\50.har
+
+2022-04-24 12:24:34 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "LrAHS03zhD6or1ETueONW8aywhmq",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:34 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "LrAHS03zhD6or1ETueONW8aywhmq",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:34 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\51.har
+
+2022-04-24 12:24:34 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 26
+
+2022-04-24 12:24:34 - [MESSAGE][PASSED] - Hit data ke : 26
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "5FA5FBC1-40F8-41B4-B6C0-89222F4EF69B",
+  "NoPolis": "POLIS-SIMAS-PA-029",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:34 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "5FA5FBC1-40F8-41B4-B6C0-89222F4EF69B",
+  "NoPolis": "POLIS-SIMAS-PA-029",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:34 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:34 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.139" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:35 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:35 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:35 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\52.har
+
+2022-04-24 12:24:35 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:35 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:35 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:35 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:35 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:35 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:35 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "6HkM1tihTHlp14Dfxg3YGVeBpz02",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:35 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "6HkM1tihTHlp14Dfxg3YGVeBpz02",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:35 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:35 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:35 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:35 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:35 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:36 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\53.har
+
+2022-04-24 12:24:36 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:36 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:36 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 27
+
+2022-04-24 12:24:36 - [MESSAGE][PASSED] - Hit data ke : 27
+
+2022-04-24 12:24:36 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "0E45D11A-A1F6-4003-A2D0-8F43EEE14BBB",
+  "NoPolis": "POLIS-SIMAS-PA-030",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:36 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "0E45D11A-A1F6-4003-A2D0-8F43EEE14BBB",
+  "NoPolis": "POLIS-SIMAS-PA-030",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:36 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:36 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.517" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:36 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:36 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:36 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\54.har
+
+2022-04-24 12:24:36 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:36 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:36 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:36 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:36 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:36 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:36 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "Ne19QOI7Ij5amQc5AjJ9ov9GZbn0",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:36 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "Ne19QOI7Ij5amQc5AjJ9ov9GZbn0",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:36 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:36 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:37 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:37 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:37 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:37 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\55.har
+
+2022-04-24 12:24:37 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:37 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:37 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 28
+
+2022-04-24 12:24:37 - [MESSAGE][PASSED] - Hit data ke : 28
+
+2022-04-24 12:24:37 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "FE53CECB-A061-4684-81BD-90E5FE4C63EA",
+  "NoPolis": "POLIS-SIMAS-PA-031",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:37 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "FE53CECB-A061-4684-81BD-90E5FE4C63EA",
+  "NoPolis": "POLIS-SIMAS-PA-031",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:37 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:37 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.812" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:38 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:38 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:39 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\56.har
+
+2022-04-24 12:24:39 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "cCsGYiS01EJ26HWU48JJ8ErzEbOs",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:39 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "cCsGYiS01EJ26HWU48JJ8ErzEbOs",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:39 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\57.har
+
+2022-04-24 12:24:39 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 29
+
+2022-04-24 12:24:39 - [MESSAGE][PASSED] - Hit data ke : 29
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "21CCF91C-7FCC-4BC0-BFC7-90FAF069EF0B",
+  "NoPolis": "POLIS-SIMAS-PA-032",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:39 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "21CCF91C-7FCC-4BC0-BFC7-90FAF069EF0B",
+  "NoPolis": "POLIS-SIMAS-PA-032",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:39 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:39 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="1.081" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:40 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:40 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:40 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\58.har
+
+2022-04-24 12:24:40 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:40 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:40 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:40 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:40 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:40 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:40 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "XdfcUAej4JpO1NuLyrGt9m7dJMzB",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:40 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "XdfcUAej4JpO1NuLyrGt9m7dJMzB",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:40 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:40 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:40 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:40 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:40 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:41 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\59.har
+
+2022-04-24 12:24:41 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:41 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:41 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 30
+
+2022-04-24 12:24:41 - [MESSAGE][PASSED] - Hit data ke : 30
+
+2022-04-24 12:24:41 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "63300930-82A4-4EC1-8D6E-9229C2B3D6EA",
+  "NoPolis": "POLIS-SIMAS-PA-033",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:41 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "63300930-82A4-4EC1-8D6E-9229C2B3D6EA",
+  "NoPolis": "POLIS-SIMAS-PA-033",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:41 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:41 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="2.309" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 12:24:41 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 12:24:41 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 12:24:42 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\60.har
+
+2022-04-24 12:24:42 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:42 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 12:24:42 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 12:24:42 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 12:24:42 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 12:24:42 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 12:24:42 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "wAlGO6O0SahtX7vFEG1AeF1GlGwE",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:42 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "wAlGO6O0SahtX7vFEG1AeF1GlGwE",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 12:24:42 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 12:24:42 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 12:24:42 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 12:24:42 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 12:24:42 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 12:24:43 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_122310\Feedback\20220424_122310\requests\main\61.har
+
+2022-04-24 12:24:43 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 12:24:43 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 12:24:43 - [TEST_STEP][PASSED] - markPassed("Hit data ke : " + no): Hit data ke : 31
+
+2022-04-24 12:24:43 - [MESSAGE][PASSED] - Hit data ke : 31
+
+2022-04-24 12:24:43 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "76FB49BF-EAC8-46B4-A2BA-9719F1FDA4D2",
+  "NoPolis": "POLIS-SIMAS-PA-034",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:43 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "76FB49BF-EAC8-46B4-A2BA-9719F1FDA4D2",
+  "NoPolis": "POLIS-SIMAS-PA-034",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 12:24:43 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}
+
+2022-04-24 12:24:43 - [MESSAGE][INFO] - {
+  "errorCode" : "00",
+  "errorMessage" : "NoPolis dan Polis Berhasil dikirim"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-04-24 12:23:38 - [TEST_SUITE][PASSED] - Feedback: Test Cases/5. get token -- pa-feedback]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

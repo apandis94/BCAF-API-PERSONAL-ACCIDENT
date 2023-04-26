@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Feedback" time="13.491" tests="1" failures="0" errors="0">
+   <testsuite name="Feedback" tests="1" failures="0" errors="0" time="13.491" skipped="0" timestamp="2022-04-24 11:15:19" hostname="Nia Yusniati - Apandi" id="Test Suites/Feedback">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Nia Yusniati\\Git_Asa\\Personal Accident\\Reports\\20220424_111450\\Feedback\\20220424_111450"/>
+         <property name="logFiles" value="C:\\Users\\Nia Yusniati\\Git_Asa\\Personal Accident\\Reports\\20220424_111450\\Feedback\\20220424_111450\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Nia Yusniati - Apandi"/>
+         <property name="hostAddress" value="192.168.129.156"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/5. get token -- pa-feedback" time="11.43" classname="Test Cases/5. get token -- pa-feedback" status="PASSED">
+         <system-out><![CDATA[2022-04-24 11:15:20 - [TEST_CASE][PASSED] - Test Cases/5. get token -- pa-feedback: Test Cases/5. get token -- pa-feedback
+
+2022-04-24 11:15:23 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("get-token")): Send request successfully
+
+2022-04-24 11:15:29 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_111450\Feedback\20220424_111450\requests\main\0.har
+
+2022-04-24 11:15:29 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 11:15:29 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-04-24 11:15:29 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-04-24 11:15:29 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-04-24 11:15:29 - [TEST_STEP][PASSED] - global_token = private_token: null
+
+2022-04-24 11:15:29 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-04-24 11:15:29 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "cWMJjafsKY2fgP8thCHwpdIEEwVS",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 11:15:29 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "cWMJjafsKY2fgP8thCHwpdIEEwVS",
+                "expires_in": "599",
+                "scope": ""
+            }
+        
+
+2022-04-24 11:15:29 - [TEST_STEP][PASSED] - println("token is :" + global_token): null
+
+2022-04-24 11:15:29 - [TEST_STEP][PASSED] - feedback = findTestObject("pa-feedback", ["token":private_token, "maskapai_id":maskapai_id, "order_id":order_id, "no_polis":no_polis, "base64":base64, "source":source]): null
+
+2022-04-24 11:15:30 - [TEST_STEP][PASSED] - markPassed("verifikasi data ke : " + no): verifikasi data ke : 1
+
+2022-04-24 11:15:30 - [MESSAGE][PASSED] - verifikasi data ke : 1
+
+2022-04-24 11:15:30 - [TEST_STEP][PASSED] - body2 = feedback.getBodyContent(): null
+
+2022-04-24 11:15:30 - [TEST_STEP][PASSED] - req = body2.getText(): null
+
+2022-04-24 11:15:30 - [TEST_STEP][PASSED] - logInfo($req): {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "29D947AC-1F9A-4871-807A-0008CA1B533B",
+  "NoPolis": "POLIS-SIMAS-PA-005",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 11:15:30 - [MESSAGE][INFO] - {
+  "MaskapaiID": "PA_SIMAS",
+  "OrderID": "29D947AC-1F9A-4871-807A-0008CA1B533B",
+  "NoPolis": "POLIS-SIMAS-PA-005",
+  "Base64EPolis": "1",
+  "Source": "SIMAS"
+}
+
+2022-04-24 11:15:30 - [TEST_STEP][PASSED] - response = sendRequest(feedback): Send request successfully
+
+2022-04-24 11:15:32 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\Personal Accident\Reports\20220424_111450\Feedback\20220424_111450\requests\main\1.har
+
+2022-04-24 11:15:32 - [MESSAGE][PASSED] - Send request successfully
+
+2022-04-24 11:15:32 - [TEST_STEP][PASSED] - response_feedback = response.getResponseText(): null
+
+2022-04-24 11:15:32 - [TEST_STEP][PASSED] - logInfo($response_feedback): {
+  "errorCode" : "03",
+  "errorMessage" : "Order dengan ID tersebut sudah pernah menerima nopolis"
+}
+
+2022-04-24 11:15:32 - [MESSAGE][INFO] - {
+  "errorCode" : "03",
+  "errorMessage" : "Order dengan ID tersebut sudah pernah menerima nopolis"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-04-24 11:15:19 - [TEST_SUITE][PASSED] - Feedback: Test Cases/5. get token -- pa-feedback]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
