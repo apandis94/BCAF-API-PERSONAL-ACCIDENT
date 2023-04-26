@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>1. get token -- pa-order</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e9dd1785-8edd-4b2c-aa11-33cb48d549dc</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.global_token</defaultValue>
+      <description></description>
+      <id>c2faef26-1c47-4b44-922f-cb1f7320f508</id>
+      <masked>false</masked>
+      <name>acc_token</name>
+   </variable>
+   <variable>
+      <defaultValue>'2021-09-25'</defaultValue>
+      <description></description>
+      <id>7afd5c43-58e8-466f-9ff1-79cb8b255ee8</id>
+      <masked>false</masked>
+      <name>order_date</name>
+   </variable>
+   <variable>
+      <defaultValue>'PA_SIMAS'</defaultValue>
+      <description></description>
+      <id>be34a6cf-1e42-4ad2-a740-a3d6d4b99ff6</id>
+      <masked>false</masked>
+      <name>maskapai_id</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>95ad650b-4b67-4bac-a7ab-e278bf398312</id>
+      <masked>false</masked>
+      <name>page</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>0ea13860-7fa4-43b1-906f-c2eb49ae2ba0</id>
+      <masked>false</masked>
+      <name>row</name>
+   </variable>
+   <variable>
+      <defaultValue>'SIMAS'</defaultValue>
+      <description></description>
+      <id>356c4d51-2134-43a4-bb20-5e77ea285129</id>
+      <masked>false</masked>
+      <name>source</name>
+   </variable>
+</TestCaseEntity>
